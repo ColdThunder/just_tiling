@@ -1,13 +1,9 @@
 
 
 
-<<<<<<< HEAD
-# hyperuniform_tiling test data directory
+# hyperuniform_tiling test data
 py/just_tiling/hyperuniform/testdata/*
 py/just_tiling/hyperuniform/testplot/*
-=======
-# hyperuniform_tiling test data
-py/just_tiling/hyperuniform/testdata
 
 # Python packaging artifacts
 *.egg-info/
@@ -17,5 +13,3 @@ __pycache__/
 *.pyc
 *.pyo
 *.whl
-
->>>>>>> ce3022e4643a324366308ac82d0f9afc4f83188b

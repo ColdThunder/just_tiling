@@ -10,12 +10,12 @@ readme = "README.rst"
 license = "BSD-3-Clause"
 requires-python = ">=3.8"
 dependencies = [
-    "numpy==1.26.4",
+    "numpy>=1.26.4",
     "matplotlib>=3.3.5",
     "pillow<11",
     "healpy>=1.16.5,<1.20",
     "astropy>=5.2.2,<8.0",
-    "scipy==1.11.4",
+    "scipy>=1.11.4",
     "joblib>=1.2.0",
 ]
 
