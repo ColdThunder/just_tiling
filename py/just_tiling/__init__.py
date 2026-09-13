@@ -5,7 +5,7 @@
 just_tiling
 ============
 
-This package is a template for other JUST_ Python_ packages.
+This package is for JUST tile scheduling.
 
 You should use :command:`just_update_version` to set the version.  This requires
 the justutil_ package.
