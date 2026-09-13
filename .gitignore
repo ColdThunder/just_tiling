@@ -3,3 +3,13 @@
 
 # hyperuniform_tiling test data
 py/just_tiling/hyperuniform/testdata
+
+# Python packaging artifacts
+*.egg-info/
+build/
+dist/
+__pycache__/
+*.pyc
+*.pyo
+*.whl
+
