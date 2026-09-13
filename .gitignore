@@ -1,5 +1,6 @@
 
 
 
-# hyperuniform_tiling test data
-py/just_tiling/hyperuniform/testdata
+# hyperuniform_tiling test data directory
+py/just_tiling/hyperuniform/testdata/*
+py/just_tiling/hyperuniform/testplot/*
