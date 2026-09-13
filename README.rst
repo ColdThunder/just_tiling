@@ -14,8 +14,8 @@ This repository is intended for the scheduling of tiles for JUST galaxy/galaxy c
 Installation
 ============
 
-The package requires Python 3.8 or later. The easiest way to install it is
-directly from GitHub using ``pip``:
+The package requires Python 3.8 or later and is installable with ``pip``.
+For the fastest setup, install directly from GitHub:
 
 .. code-block:: bash
 
@@ -24,8 +24,9 @@ directly from GitHub using ``pip``:
 Install from source
 -------------------
 
-To install a local editable copy for development, clone the repository and
-install it with ``pip``:
+If you want to run the example scripts in place (they read data files from
+relative paths inside the repository), clone the repository and install it in
+editable mode:
 
 .. code-block:: bash
 
@@ -33,12 +34,15 @@ install it with ``pip``:
     cd just_tiling
     pip install -e .
 
-Install dependencies
---------------------
+Editable mode keeps the source files where they are, so the examples can be
+run directly from ``py/just_tiling/hyperuniform/`` and
+``py/just_tiling/minimize_updf/``.
 
-If you only want to install the runtime dependencies (for example, before
-running scripts directly from the repository), use the provided
-``requirements.txt``:
+Install dependencies only
+-------------------------
+
+If you prefer to run the scripts without installing the package itself, just
+install the runtime dependencies from ``requirements.txt``:
 
 .. code-block:: bash
 
@@ -46,6 +50,17 @@ running scripts directly from the repository), use the provided
 
 The dependencies include ``numpy``, ``matplotlib``, ``healpy``, ``astropy``,
 ``scipy``, and ``joblib``.
+
+Troubleshooting
+---------------
+
+``healpy`` and the compiled parts of ``numpy`` require pre-built wheels for
+your Python version and operating system. If ``pip`` tries to build them from
+source and fails, use a Python environment with available wheels (for
+example, a recent conda_ environment) or install the dependencies first with
+``pip install -r requirements.txt`` before installing ``just_tiling``.
+
+.. _conda: https://docs.conda.io/en/latest/
 
 
 Running the hyperuniform tiling example
