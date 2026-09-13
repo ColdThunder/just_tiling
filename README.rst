@@ -9,3 +9,9 @@ This repository is intended for the scheduling of tiles for JUST galaxy/galaxy c
 
 .. _JUST: https://just.sjtu.edu.cn/EN/about.php
 
+
+
+Installation
+============
+
+pip install git+https://github.com/zjdingastro/just_tiling.git
