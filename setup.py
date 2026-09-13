@@ -62,8 +62,14 @@ def find_packages_compat(where):
     base = os.path.join(HERE, where)
     packages = []
     for root, dirs, files in os.walk(base):
-        # Do not recurse into hidden or cache directories.
-        dirs[:] = [d for d in dirs if not d.startswith(".") and d != "__pycache__"]
+        # Do not recurse into hidden, cache, or packaging directories.
+        dirs[:] = [
+            d
+            for d in dirs
+            if not d.startswith(".")
+            and d != "__pycache__"
+            and not d.endswith(".egg-info")
+        ]
         rel = os.path.relpath(root, base)
         if rel == ".":
             continue

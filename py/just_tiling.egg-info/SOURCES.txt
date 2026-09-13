@@ -2,6 +2,7 @@ LICENSE.rst
 MANIFEST.in
 README.rst
 pyproject.toml
+setup.py
 py/just_tiling/__init__.py
 py/just_tiling/_version.py
 py/just_tiling.egg-info/PKG-INFO
